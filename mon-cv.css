@@ -1,0 +1,186 @@
+:root {
+  --bleu-nuit: #0b2545;    /* colonne gauche, pied de page */
+  --bleu: #2563eb;         /* titres, boutons */
+  --bleu-clair: #dbeafe;   /* étiquettes, traits */
+  --bleu-fond: #f1f6fd;    /* fond de la page */
+  --texte: #1b2a41;        /* texte principal */
+  --texte-doux: #5b6b82;   /* dates, détails */
+}
+
+
+.page {
+  margin: 0;
+  font-family: "Manrope", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--bleu-fond);
+}
+
+.cv {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 30px rgba(11, 37, 69, 0.12);
+}
+
+.cote {
+  background: var(--bleu-nuit);
+  color: white;
+  padding: 2.5rem 1.75rem;
+}
+
+.cote .photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;          
+  border-radius: 50%;
+  border: 4px solid var(--bleu);
+  margin-bottom: 1.25rem;
+}
+
+.cote h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 0.25rem;
+}
+
+.cote .metier {
+  color: #93c5fd;
+  font-weight: 500;
+  margin: 0 0 1.25rem;
+}
+
+.cote h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--bleu);
+}
+
+.cote a {
+  color: white;
+  word-break: break-word;  /* pour pas que l'email dépasse */
+}
+
+.liste-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-contact li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Bouton du porfolio */
+.bouton {
+  display: inline-block;
+  background: var(--bleu);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+}
+
+.bouton:hover,
+.bouton:focus {
+  background: #3b82f6;
+}
+
+
+.etiquette {
+  list-style: none;
+  background: var(--bleu-clair);
+  color: var(--bleu-nuit);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+
+.contenu {
+  padding: 2.5rem 2.25rem;
+}
+
+.contenu section {
+  margin-bottom: 2.25rem;
+}
+
+.contenu h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--bleu);
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--bleu-clair);
+}
+
+
+.bloc {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--bleu-clair);   /* le ptit trait à gauche */
+}
+
+.bloc h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bloc .detail {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--texte-doux);
+}
+
+
+.cote .bloc {
+  border-left-color: var(--bleu);
+}
+
+.cote .bloc h3 {
+  font-size: 1rem;
+}
+
+.cote .bloc .detail {
+  color: #bfdbfe;
+  font-size: 0.9rem;
+}
+
+/* Détail expérience */
+.liste-points {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  list-style: disc;          
+  font-size: 0.95rem;
+}
+
+.liste-points li {
+  margin-bottom: 0.2rem;
+}
+
+.liste-points li::marker {
+  color: var(--bleu);
+}
+
+
+.pied {
+  background: var(--bleu-nuit);
+  color: #bfdbfe;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+
+@media (max-width: 767px) {
+  .contenu {
+    padding: 2rem 1.25rem;
+  }
+}
